@@ -1,7 +1,6 @@
 <?php
-$inicio = true;
-include './templates/header.php'
-
+include './includes/funciones.php';
+incluirTemplate('header', $inicio = true);
 ?>
 
 <main class="contenedor">
@@ -200,21 +199,6 @@ include './templates/header.php'
     </section>
 
 </div>
-<footer class="footer seccion">
-    <div class="contenedor contenedor-footer">
-        <nav class="navegacion">
-            <a href="nosotros.php">Nosotros</a>
-            <a href="anuncios.php">Anuncios</a>
-            <a href="blog.php">Blog</a>
-            <a href="contactos.php">Contacto</a>
-        </nav>
-    </div>
-    <p class="copyright">
-        Derechos reservador Sebastian Caffre &copy;
-    </p>
-</footer>
-
-<script src="build/js/bundle.min.js"></script>
-</body>
-
-</html>
+<?php
+incluirTemplate('footer');
+?>
